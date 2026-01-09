@@ -6,7 +6,7 @@ public class Proyecto_Final_Carlos_Hidalgo {
 
     public static void main(String[] args) {
         String cliente;
-        double compra1,compra2,compra3,tc,pc,mc;
+        double compra1,compra2,compra3,tc,pc;
         Scanner lectura=new Scanner(System.in);
         System.out.print("Ingresar nombre del cliente: ");
         cliente=lectura.next();
@@ -18,11 +18,10 @@ public class Proyecto_Final_Carlos_Hidalgo {
         compra3=lectura.nextDouble();
         tc=compra1+compra2+compra3;
         pc=tc/3;
-        mc = Math.max(compra1, Math.max(compra2,compra3));
         
         System.out.println("Las compras realizadas por el cliente "+ cliente +" suman: "+tc);
         System.out.println("El promedio de las compras realizadas por el cliente "+ cliente + " es: "+pc);
-        System.out.println("La compra que mas elevada del cliente "+ cliente +" es: "+mc);
+        
     }
     
 }
